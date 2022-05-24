@@ -16,6 +16,9 @@ afterEach(() => {
     container = null;
 });
 
+
+//В данном тесте, мы не должны обнаружить текста в нашем контейнере, с отрисованным компонентом
+
 it("testing SmokeText", () => {
     act(() => {
         render(<SmokeText transform={null} nameOfClass={null}>Москва</SmokeText>, container);
