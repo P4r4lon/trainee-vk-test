@@ -53,19 +53,19 @@ export default ({item, index, transform}) => {
 
 			{warning && (
 				<Block className={transform('warning')}>
-					<SmokeText>{warning}</SmokeText>
+					<SmokeText transform={null} nameOfClass={null}>{warning}</SmokeText>
 				</Block>
 			)}
 
 			<Block className={transform('contacts')}>
 
-				<Block className={transform('contacts__item contacts__item_link')}>
-					<SmokeText>{domain}</SmokeText>
+				<Block className={transform('contacts__item')}>
+					<SmokeText transform={transform} nameOfClass={'contacts__item_link'}>{domain}</SmokeText>
 				</Block>
 
 				{region && (
 					<Block className={transform('contacts__item')}>
-						<SmokeText>{region}</SmokeText>
+						<SmokeText transform={null} nameOfClass={null}>{region}</SmokeText>
 					</Block>
 				)}
 			</Block>
